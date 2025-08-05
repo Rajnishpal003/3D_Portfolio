@@ -211,20 +211,6 @@ const testimonials = [
       "Collaborating with Rajnish was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Rajnish's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Rajnish is the ideal partner.",
     imgPath: "/images/client2.png",
   },
-  {
-    name: "Shivangi Singh",
-    mentions: "@shivangisingh",
-    review:
-      "Rajinsh was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
-    imgPath: "/images/client5.png",
-  },
-  {
-    name: "Rohit Rathore",
-    mentions: "@rohit_rathore",
-    review:
-      "Rohit’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
-    imgPath: "/images/client4.png",
-  },
   
 ];
 
