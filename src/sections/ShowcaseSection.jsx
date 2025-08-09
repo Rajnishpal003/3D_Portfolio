@@ -45,18 +45,17 @@ const AppShowcase = () => {
 
   return (
     <div id="work" ref={sectionRef} className="app-showcase">
-      <div className="w-full">
+      <div className=" image-wrapper">
         <div className="showcaselayout">
           <div ref={rydeRef} className="first-project-wrapper">
             <div className="image-wrapper">
-              <a href="https://filmyapp.vercel.app/" target="_blank" rel="noopener noreferrer">
-                <img src="/images/project1.png" alt="Ryde App Interface" />
+              <a href="https://sample-sigma-inky.vercel.app/" target="_blank" rel="noopener noreferrer">
+                <img src="/images/gpt.png" alt="Ryde App Interface" />
               </a>
             </div>
             <div className="text-content">
               <h2>
-                On-Demand Movies Made Simple with a Powerful, User-Friendly App
-                called MovieLand
+                mobile-first ChatGPT clone built using Next.js App Router, integrating Google’s Gemini APIs to enable both text-based conversational AI and AI image generation. 
               </h2>
               <p className="text-white-50 md:text-xl">
                 An app built with React Native, Expo, & TailwindCSS for a fast,

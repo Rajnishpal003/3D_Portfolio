@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 
 import { navLinks } from "../constants";
 
+import linkedinlogo from "../../public/linkedin.png";
 const NavBar = () => {
   // track if the user has scrolled down the page
   const [scrolled, setScrolled] = useState(false);
@@ -45,6 +46,11 @@ const NavBar = () => {
         <a href="#contact" className="contact-btn group">
           <div className="inner">
             <span>Contact me</span>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/rajnish-pal-singh/" className="linkedin">
+          <div className="inner">
+           <img src={linkedinlogo} alt="linkedin" />
           </div>
         </a>
       </div>

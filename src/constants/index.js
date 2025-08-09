@@ -11,10 +11,7 @@ const navLinks = [
     name: "Skills",
     link: "#skills",
   },
-  {
-    name: "Testimonials",
-    link: "#testimonials",
-  },
+  
 ];
 
 const words = [
@@ -84,7 +81,7 @@ const abilities = [
   },
   {
     imgPath: "/images/time.png",
-    title: "On-Time Delivery",
+    title: "Hard working",
     desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
   },
 ];
@@ -145,6 +142,62 @@ const techStackIcons = [
   },
 ];
 
+// mychanges 
+const skillCategories = [
+  {
+   
+    skills: [
+      { name: "JavaScript", icon: "Icons8/javascript.png" },
+      { name: "Python", icon: "Icons8/icons8-python-50.png" },
+      { name: "HTML5", icon: "Icons8/icons8-html5-64.png" },
+      { name: "CSS3", icon: "Icons8/css.png" },
+      { name: "SQL", icon: "Icons8/icons8-sql-64.png" },
+    ],
+  },
+  {
+    
+    skills: [
+      { name: "React.js", icon: "Icons8/icons8-react-js-48.png" },
+      { name: "Redux", icon: "Icons8/icons8-redux-24.png" },
+      { name: "React Hooks", icon: "images/reacthooks.png" },
+      { name: "Next.js", icon: "images/nextjs.png" },
+      { name: "HTML5", icon: "Icons8/icons8-html5-64.png" },
+      
+    ],
+  },
+  {
+    
+    skills: [
+      { name: "Node.js", icon: "/Icons8/icons8-nodejs-48.png" },
+      { name: "Express.js", icon: "/Icons8/icons8-express-js-40.png" },
+      { name: "REST API", icon: "/images/restapi.png" },
+      { name: "JWT Auth", icon: "/images/jwt.png" },
+    ],
+  },
+  {
+    
+    skills: [
+      { name: "MongoDB", icon: "/Icons8/icons8-mongo-db-48.png" },
+      { name: "MySQL", icon: "/Icons8/icons8-sql-64.png" },
+      { name: "PostgreSQL", icon: "/images/postgress.jpeg" },
+    ],
+  },
+  {
+    
+    skills: [
+      { name: "Git", icon: "/Icons8/git.png" },
+      { name: "Docker", icon: "/Icons8/icons8-docker-50.png" },
+      { name: "AWS", icon: "/Icons8/icons8-aws-48.png" },
+      { name: "Vercel", icon: "/images/vercel.png" },
+      { name: "Render", icon: "/images/render.png" },
+      { name: "Postman", icon: "/Icons8/icons8-postman-64.png" },
+    ],
+  },
+];
+
+
+
+
 const expCards = [
   {
     review: "Rajnish brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
@@ -189,30 +242,30 @@ const expLogos = [
   },
 ];
 
-const testimonials = [
-  {
-    name: "Shreyansh Rajput",
-    mentions: "@shreyanshrajput",
-    review:
-      "I can’t say enough good things about Rajnish. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
-    imgPath: "/images/client1.png",
-  },
-  {
-    name: "Vivek Kumar",
-    mentions: "@vivekkumar",
-    review:
-      "Working with Rajnish was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
-    imgPath: "/images/client3.png",
-  },
-  {
-    name: "Rahul Kumar",
-    mentions: "@rahulkumar",
-    review:
-      "Collaborating with Rajnish was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Rajnish's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Rajnish is the ideal partner.",
-    imgPath: "/images/client2.png",
-  },
+// const testimonials = [
+//   {
+//     name: "Shreyansh Rajput",
+//     mentions: "@shreyanshrajput",
+//     review:
+//       "I can’t say enough good things about Rajnish. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
+//     imgPath: "/images/client1.png",
+//   },
+//   {
+//     name: "Vivek Kumar",
+//     mentions: "@vivekkumar",
+//     review:
+//       "Working with Rajnish was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
+//     imgPath: "/images/client3.png",
+//   },
+//   {
+//     name: "Rahul Kumar",
+//     mentions: "@rahulkumar",
+//     review:
+//       "Collaborating with Rajnish was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Rajnish's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Rajnish is the ideal partner.",
+//     imgPath: "/images/client2.png",
+//   },
   
-];
+// ];
 
 const socialImgs = [
   {
@@ -235,7 +288,11 @@ const socialImgs = [
     imgPath: "/images/linkedin.png",
   },
 ];
-
+const toggleTheme = () => {
+  const root = document.documentElement;
+  const isNight = root.classList.toggle("night");
+  localStorage.setItem("theme", isNight ? "night" : "day");
+};
 export {
   words,
   abilities,
@@ -243,9 +300,10 @@ export {
   counterItems,
   expCards,
   expLogos,
-  testimonials,
+  // testimonials,
   socialImgs,
   techStackIcons,
   techStackImgs,
   navLinks,
+  skillCategories
 };
