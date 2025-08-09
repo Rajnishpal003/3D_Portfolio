@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 import { navLinks } from "../constants";
 
-import linkedinlogo from "../../public/linkedin.png";
+import linkedinlogo from "/linkedin.png";
 const NavBar = () => {
   // track if the user has scrolled down the page
   const [scrolled, setScrolled] = useState(false);
