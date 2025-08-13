@@ -67,7 +67,7 @@ const AppShowcase = () => {
           <div className="project-list-wrapper overflow-hidden">
             <div className="project" ref={libraryRef}>
               <div className="image-wrapper bg-[#FFEFDB]">
-                <a href="https://resume-editor-lac.vercel.app/" target="_blank" rel="noopener noreferrer">
+                <a href="https://resume-up.vercel.app/" target="_blank" rel="noopener noreferrer">
                   <img
                     src="/images/project2.png"
                     alt="Resume Editor Platform"
